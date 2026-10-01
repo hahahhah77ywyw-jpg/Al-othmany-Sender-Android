@@ -20,13 +20,49 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '17'
-          cache: gradle
+          java-version: "17"
+
+      - name: Create Android project
+        shell: bash
+        run: |
+          mkdir -p app/src/main/java/com/example/althomanysender
+          mkdir -p app/src/main/res/values
+          mkdir -p app/src/main/res/xml
+
+          cp AndroidManifest.xml app/src/main/AndroidManifest.xml
+          cp AppState.java app/src/main/java/com/example/althomanysender/
+          cp LinkEngine.java app/src/main/java/com/example/althomanysender/
+          cp MainActivity.java app/src/main/java/com/example/althomanysender/
+          cp SenderAccessibilityService.java app/src/main/java/com/example/althomanysender/
+
+          cp colors.xml app/src/main/res/values/
+          cp strings.xml app/src/main/res/values/
+          cp themes.xml app/src/main/res/values/
+          cp accessibility_service_config.xml app/src/main/res/xml/
+
+          cat > app/build.gradle <<'EOF'
+          plugins {
+              id 'com.android.application'
+          }
+
+          android {
+              namespace 'com.example.althomanysender'
+              compileSdk 35
+
+              defaultConfig {
+                  applicationId 'com.example.althomanysender'
+                  minSdk 23
+                  targetSdk 35
+                  versionCode 1
+                  versionName '4.1.0'
+              }
+          }
+          EOF
 
       - name: Build APK
         run: gradle --no-daemon clean assembleDebug
 
-      - name: Verify APK exists
+      - name: Verify APK
         run: test -s app/build/outputs/apk/debug/app-debug.apk
 
       - name: Upload APK
