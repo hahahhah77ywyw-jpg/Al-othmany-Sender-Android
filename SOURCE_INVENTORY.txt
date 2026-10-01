@@ -1,0 +1,15 @@
+/mnt/data/Al-othmany-Sender-Android/README_AR.md
+/mnt/data/Al-othmany-Sender-Android/SOURCE_INVENTORY.txt
+/mnt/data/Al-othmany-Sender-Android/app/build.gradle
+/mnt/data/Al-othmany-Sender-Android/app/src/main/AndroidManifest.xml
+/mnt/data/Al-othmany-Sender-Android/app/src/main/java/com/example/alothmanysender/AppState.java
+/mnt/data/Al-othmany-Sender-Android/app/src/main/java/com/example/alothmanysender/LinkEngine.java
+/mnt/data/Al-othmany-Sender-Android/app/src/main/java/com/example/alothmanysender/MainActivity.java
+/mnt/data/Al-othmany-Sender-Android/app/src/main/java/com/example/alothmanysender/SenderAccessibilityService.java
+/mnt/data/Al-othmany-Sender-Android/app/src/main/res/values/colors.xml
+/mnt/data/Al-othmany-Sender-Android/app/src/main/res/values/strings.xml
+/mnt/data/Al-othmany-Sender-Android/app/src/main/res/values/themes.xml
+/mnt/data/Al-othmany-Sender-Android/app/src/main/res/xml/accessibility_service_config.xml
+/mnt/data/Al-othmany-Sender-Android/build.gradle
+/mnt/data/Al-othmany-Sender-Android/gradle.properties
+/mnt/data/Al-othmany-Sender-Android/settings.gradle

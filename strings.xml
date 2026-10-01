@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Al-othmany Sender</string>
+    <string name="accessibility_description">يسمح للتطبيق بتنفيذ إجراءات الانضمام والنشر التي يطلبها المستخدم داخل تطبيق واتساب المحدد.</string>
+</resources>
